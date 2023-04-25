@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+
+    <style>
+    
+    #container {
+        height: 5000px;
+        margin-bottom: -500px;
+        /*background-color: blue;*/
+        display: grid;
+        grid-template-areas:
+            "content"
+            "content"
+            "content"
+            "content"
+            "content";
+        grid-template-columns: 3fr;
+        gap: 20px;
+      }
+
+      article {
+        text-align: center;
+        margin-bottom: -900px;
+        /*border: dotted 4px white;
+        background-color: black;
+        */
+        padding: 10px;
+        grid-area: content;
+      }
+        
+    </style>
+</head>
+<body>
+    <h1>Beach Clean Up</h1>
+    <p>Please use the broom provided below to sweep up the last bits of trash. We really appreciate it!</p>
+    <div id="broom">
+        <img src="images/broom.png" title="broom" alt="image of broom" width="100%" height="900px">
+    </div>
+
+    <div id="turtles">
+        <div class="turtle1"><img src="images/turtle.png" title="turtle" alt="image of turtle" width="300" height="300"></div>
+        <div class="turtle2"><img src="images/turtle.png" title="turtle" alt="image of turtle" width="300" height="300"></div>
+        <div class="turtle3"><img src="images/turtle.png" title="turtle" alt="image of turtle" width="300" height="300"></div>
+    </div>
+
+    <article>
+        <div id="container">
+            <div class="apple"><img src="images/apple.png" title="apple" alt="image of apple" width="200" height="200"></div>
+            <div class="bag"><img src="images/bag.png" title="bag" alt="image of bag" width="300" height="400"></div>
+            <div class="bottle"><img src="images/bottle.png" title="bottle" alt="image of bottle" width="300" height="300"></div>
+            <div class="paper"><img src="images/paper.png" title="paper" alt="image of paper" width="100" height="100"></div>
+        </div>
+    </article>
+
+    <div id="bin">
+        <div class="bin"><img src="images/bin.png" title="bin" alt="image of bin" width="100%" height="900px"></div>
+        <h1 style="position:relative; bottom: 400px; color: white;">Thank You!</h1>
+    </div>
+
+
+
+</body>
+</html>
